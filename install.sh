@@ -21,7 +21,7 @@ sudo apt install android-tools-adb
 echo "Instalação do quemu-kvm"
 #
 sudo apt install qemu-kvm -y
-sudo adduser $USER qmu-kvm
+sudo adduser $USER kvm
 id $USER
 #
 #Update the system
