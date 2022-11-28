@@ -43,7 +43,6 @@ sudo apt clean
 #install nodejs and npm LTS version
 echo "Installing nodejs and npm LTS version"
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - &&\
-echo "Using Debian, as root"
 sudo apt install -y nodejs
 #
 echo "Install vscode"
