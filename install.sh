@@ -30,7 +30,7 @@ sudo apt update
 #
 #Install the necessary packages
 echo "Installing the necessary packages"
-sudo apt install -y build-essential libssl-dev libffi-dev apt-transport-https ca-certificates git-all wget gpg curl software-properties-common
+sudo apt install -y build-essential libssl-dev libffi-dev apt-transport-https ca-certificates git-all wget curl software-properties-common
 #
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
