@@ -1,4 +1,4 @@
-# Ambiente_React_native_debian
+# Ambiente React native debian 9
 
 
 * Venho aqui demonstrar a adaptação que uso para criar o ambiente de desenvolvimento em Debian GNU/Linux.
