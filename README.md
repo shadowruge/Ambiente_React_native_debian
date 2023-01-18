@@ -84,19 +84,8 @@ sudo apt install default-jdk default-jre -y
 sudo apt install zip unzip  -y
 
 curl -O https://downloads.gradle-dn.com/distributions/gradle-7.3.2-bin.zip<br>
+[link install guid](https://docs.gradle.org/7.3.2/userguide/installation.html)
 
-* Descompacte-o dentro de sua pasta de download e depois mova -o para o diretório /opt.<br>
-sudo mv gradle-7.3.2 /opt/gradle
-* Use o comando ls para visualizar o conteúdo da pasta.<br>
-ls /opt/gradle/
-
-* Variáveis de ambiente $PATH.<br>
-export PATH=/opt/gradle/bin:${PATH}" | sudo tee /etc/profile.d/gradle.sh<br>
-* De permissão para execução.<br>
-sudo chmod +x /etc/profile.d/gradle.sh<br>
-source /etc/profile.d/gradle.sh<br>
-* Verifique se a instalação.<br>
-gradle -v
 * Agora é só baixar o android studio e fixar o seu $PATH.<br>
 export ANDROID_HOME=$HOME/Android/Sdk<br>
 export PATH=$PATH:$ANDROID_HOME/tools<br>
