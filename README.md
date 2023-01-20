@@ -63,7 +63,7 @@ sudo apt install -y build-essential libssl-dev libffi-dev apt-transport-https ca
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 
 * Validação da chave para url.<br>
-sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg<br>
 sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
 
 sudo rm -f packages.microsoft.gpg
@@ -86,8 +86,10 @@ sudo apt install zip unzip  -y
 curl -O https://downloads.gradle-dn.com/distributions/gradle-7.3.2-bin.zip<br>
 [link install guid](https://docs.gradle.org/7.3.2/userguide/installation.html)
 
+*Instalar o Android Studio<br>
+[link install guid](https://developer.android.com/studio/install?hl=pt-br)
 * Agora é só baixar o android studio e fixar o seu $PATH.<br>
 export ANDROID_HOME=$HOME/Android/Sdk<br>
 export PATH=$PATH:$ANDROID_HOME/tools<br>
 export PATH=$PATH:$ANDROID_HOME/platform-tools<br>
-* Pronto se deu tudo certo você esta com um ambiente de desenvolvimento react/react native instalado na sua distro debian ou variante, obrigado e espero ter ajudado... \O.
+* Pronto se deu tudo certo você esta com um ambiente de desenvolvimento react e react native,<br> instalado na sua distro debian ou variante, obrigado e espero ter ajudado... \O.
